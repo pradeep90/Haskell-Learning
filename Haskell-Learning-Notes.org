@@ -26,3 +26,12 @@
 ** filterM
 *** Power set - Found this out COMPLETELY by accident - Was trying everything else
     filterM (\_ -> [True, False]) [1..4]
+* Arithmetic stuff
+** rem vs mod
+   #+BEGIN_SRC haskell
+*Main Data.List Control.Applicative> [quot, rem, div, mod] <*> [3] <*> [2]
+[1,1,1,1]
+*Main Data.List Control.Applicative> [quot, rem, div, mod] <*> [-3] <*> [2]
+[-1,-1,-2,1]
+
+   #+END_SRC
